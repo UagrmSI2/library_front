@@ -1,0 +1,23 @@
+<div class="container">
+    <form (ngSubmit)="saveUser(forma)" #forma="ngForm">
+        <div class="form-group">
+            <div class="mb-3">
+                <label  class="form-label">Email</label>
+                <input ngModel name="email" type="email" class="form-control"  placeholder="Introduzca su email">
+              </div>
+              <div class="mb-3">
+                <label  class="form-label">Contraseña</label>
+                <input ngModel name="password" type="password" class="form-control"  placeholder="Introduzca su contraseña">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Nombre Completo</label>
+                <input ngModel name="fullname" type="text" class="form-control"  placeholder="Introduzca su nombre completo">
+              </div>
+              <div class="container-login100-form-btn m-t-17">
+                <button  routerLinkActive="router-link-active" class="btn btn-primary" type="submit">
+                    Registrarse
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

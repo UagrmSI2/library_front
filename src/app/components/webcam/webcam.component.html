@@ -1,0 +1,27 @@
+<div class="container">
+    <button  type="button" class="btn btn-primary" (click)="capture()">Tomar Foto</button>
+    
+    <video
+        [class.show]="!isCaptured"
+        [class.hide]="isCaptured"
+        #video
+        id="video"
+        [width]="WIDTH"
+        [height]="HEIGHT"
+        autoplay
+    ></video>
+    <button  *ngIf="isCaptured" type="button" class="btn btn-primary" (click)="uploadPhoto()">Subir Imagen </button>
+    <div *ngIf="uploadedPhotos>0">
+        <p>Se han subido {{uploadedPhotos}} fotos</p>
+    </div>
+    <canvas
+        [class.show]="isCaptured"
+        [class.hide]="!isCaptured"
+        #canvas
+        id="canvas"
+        [width]="WIDTH"
+        [height]="HEIGHT"
+    ></canvas>
+
+</div>
+

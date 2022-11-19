@@ -23,7 +23,8 @@ const routes: Routes = [
   {
     path:'payment',
     component:PaymentComponent
-  }
+  },
+  { path: 'loginAuth', loadChildren: () => import('./auth-login/auth-login.module').then(m => m.AuthLoginModule) }
 ];
 
 @NgModule({

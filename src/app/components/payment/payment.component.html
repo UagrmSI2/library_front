@@ -1,3 +1,29 @@
 <div class="container">
-    <h1>AQUI PROCEDE A SUSCRIBIRSE Y PAGAR EL PEJI</h1>
+    <div class="row mt-4">
+        <div class="col-6 centered">
+            <h1 style="text-align: center;">
+                Subscripciones
+            </h1>
+        </div>
+    </div>
+    <hr>
+    <div class="row gy-3 gm-3">
+        <div class="col-sm-6 col-md-4 col-lg-4" *ngFor="let subscription of subscriptions ">
+            <div class="card">
+                <h3 class="tittle-card">&nbsp;{{subscription.id}}</h3>
+                <img src="../../../assets/images/portada.jpg" alt="image" class="card-img-top">
+                <div class="card-body centered">
+                    <h3 class="card-tittle">Tiempo: {{subscription.description | titlecase}}</h3>
+                    <h3 class="card-tittle">Precio: {{subscription.price}} $</h3>
+                </div>
+                <div class="card-footer">
+                    <div class="centered">
+                        <button (click)="createOrder(subscription.id)" type="button" class="btn btn-outline-info btn-block btn-lg">
+                            Pagar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

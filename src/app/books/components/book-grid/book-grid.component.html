@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-md-3 mb-5" *ngFor="let book of books">
+        <img [src]="book.img" class="img-fluid poster">
+        <div>
+            <h3>{{book.title}}</h3>
+            <div class="row">
+                <div class="col-10 text-white">
+                    <star-rating [value]= "book.score"
+                                checkedcolor="red"
+                                [totalstars]=10 
+                                uncheckedcolor="black" 
+                                [readonly]=true
+                                size="24px" 
+                                ></star-rating>
+                </div>
+                <div class="col-2 text-black">
+                    {{book.score | number:'1.1-2'}}
+                </div>
+                <div>
+                    <button class="btn btn-primary" (click)="goToRead(book._id)">Leer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

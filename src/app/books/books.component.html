@@ -1,0 +1,9 @@
+
+
+<h1 class="mt-5">Nuestro Catalogo</h1>
+
+<div class="row" *ngIf="books.length > 0">
+    <div class="col">
+        <app-book-grid [books]="books"></app-book-grid>
+    </div>
+</div>

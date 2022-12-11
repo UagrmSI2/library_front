@@ -29,7 +29,8 @@ const routes: Routes = [
     path:'payment',
     component:PaymentComponent
   },
-  { path: 'loginAuth', loadChildren: () => import('./auth-login/auth-login.module').then(m => m.AuthLoginModule) }
+  { path: 'loginAuth', loadChildren: () => import('./auth-login/auth-login.module').then(m => m.AuthLoginModule) },
+  { path: 'books', loadChildren: () => import('./books/books.module').then(m => m.BooksModule) }
 ];
 
 @NgModule({

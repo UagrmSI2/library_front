@@ -1,0 +1,13 @@
+<div>
+    <h1>{{book.title}}</h1>
+    <pdf-viewer [src]="book.file"
+    [rotation]="0"
+    [original-size]="true"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [render-text]="true"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; position:absolute;"
+    ></pdf-viewer>
+</div>

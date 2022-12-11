@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  server_url:'https://library-sw2-test.herokuapp.com'
+  server_url:'http://localhost:4000'
 };
 
 /*

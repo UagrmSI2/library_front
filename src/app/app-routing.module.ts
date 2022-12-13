@@ -5,6 +5,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { UserTokenGuard } from './guards/userToken/user-token.guard';
 import { PaymentComponent } from './components/payment/payment.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
     component:LoginComponent
   },
   {
+    path:'home',
+    component:HomeComponent
+  },
+  {
     path:'register',
     component:RegisterComponent
   },
@@ -25,7 +30,9 @@ const routes: Routes = [
     component:PaymentComponent
   },
   { path: 'loginAuth', loadChildren: () => import('./auth-login/auth-login.module').then(m => m.AuthLoginModule) },
-  { path: 'books', loadChildren: () => import('./books/books.module').then(m => m.BooksModule) }
+  { path: 'books', loadChildren: () => import('./books/books.module').then(m => m.BooksModule) },
+  {path: '', redirectTo:'/register' , pathMatch:'full'},
+  {path: '**', redirectTo:'/login', pathMatch:'full'}
 ];
 
 @NgModule({

@@ -1,0 +1,23 @@
+img {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 1rem;
+}
+
+.centered {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.tittle-card {
+    background-color: rgb(37, 131, 131);
+    border-radius: 5px !important;
+    border: 1px solid black;
+}
+
+pagination-controls {
+    text-align: center;
+}

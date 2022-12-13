@@ -1,23 +1,50 @@
-<div class="container">
-    <form >
+<!-- <div class="container">
+    <form>
         <div class="form-group">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input [(ngModel)]="user.email" name="email" type="email" class="form-control"  placeholder="Introduzca su email">
-              </div>
-              <div class="mb-3">
+                <input [(ngModel)]="user.email" name="email" type="email" class="form-control" placeholder="Introduzca su email">
+            </div>
+            <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Contraseña</label>
-                <input [(ngModel)]="user.password" name="password" type="password" class="form-control"  placeholder="Introduzca su contraseña">
-              </div>
-              <div class="container-login100-form-btn m-t-17">
-                <button  routerLinkActive="router-link-active" (click)="login()" class="btn btn-primary" type="submit">
+                <input [(ngModel)]="user.password" name="password" type="password" class="form-control" placeholder="Introduzca su contraseña">
+            </div>
+            <div class="container-login100-form-btn m-t-17">
+                <button routerLinkActive="router-link-active" (click)="login()" class="btn btn-primary" type="submit">
                     Ingresar
-                </button>
-                /
-                <button  routerLinkActive="router-link-active" (click)="goToRegister()" class="btn btn-primary" type="submit">
+                </button> /
+                <button routerLinkActive="router-link-active" (click)="goToRegister()" class="btn btn-primary" type="submit">
                     Registrarse
                 </button>
             </div>
         </div>
     </form>
+</div> -->
+<div class="image" style="background-image: url('../../../assets/images/fondo-login.png'); overflow-y: hidden;">
+    <div class="row " style="align-items: center;">
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <div class="card text-center sombreado">
+                <div class="card-body ">
+                    <h3 class="card-title">Inicio de Sesión</h3>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <input type="text" id="email" class="form-control" name="email" placeholder="Ingresar Correo" [(ngModel)]="user.email" autocomplete="off" spellcheck="false">
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-top: 10px;">
+                        <div class="col-md-12">
+                            <!-- <input type="password" id="password" class="form-control " name="password" (keydown.enter)="redirect()" placeholder="Ingresar Contraseña" [(ngModel)]="password"> -->
+                            <input type="password" class="form-control" placeholder="Ingresar Contraseña" (keydown.enter)="login()" [(ngModel)]="user.password">
+                        </div>
+                    </div>
+                    <button routerLinkActive="router-link-active" (click)="login()" class="btn btn-primary" type="submit">
+                        Ingresar
+                    </button> /
+                    <button routerLinkActive="router-link-active" (click)="goToRegister()" class="btn btn-primary" type="submit">
+                        Registrarse
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

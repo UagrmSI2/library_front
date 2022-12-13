@@ -7,7 +7,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PaymentService {
-  private url = "https://localhost:7160/api/";
+  //private url = "https://localhost:7160/api/";
+  private url = "http://www.paymentmicroservice.somee.com/api/";
   constructor(private router: Router, private http: HttpClient) { 
     
   }

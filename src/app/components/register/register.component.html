@@ -1,6 +1,6 @@
-<div class="container">
+<div class="image" style="background-image: url('../../../assets/images/fondo-plomo.jpg'); overflow-y: hidden;">
     <form (ngSubmit)="saveUser(forma)" #forma="ngForm">
-        <div class="form-group">
+        <!-- <div class="form-group">
             <div class="mb-3">
                 <label  class="form-label">Email</label>
                 <input ngModel name="email" type="email" class="form-control"  placeholder="Introduzca su email">
@@ -17,6 +17,36 @@
                 <button  routerLinkActive="router-link-active" class="btn btn-primary" type="submit">
                     Registrarse
                 </button>
+            </div>
+        </div> -->
+        <div class="row " style="align-items: center;">
+            <div class="col-12 d-flex align-items-center justify-content-center">
+                <div class="card text-center sombreado">
+                    <div class="card-body ">
+                        <h3 class="card-title">Formulario de Registro</h3>
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" placeholder="Ingresar Correo" ngModel name="email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" placeholder="Ingresar Contraseña" ngModel name="password">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-label">Nombre Completo</label>
+                                <input type="text" class="form-control" placeholder="Ingresar Nombre Completo" ngModel name="fullname">
+                            </div>
+                        </div>
+                        <button routerLinkActive="router-link-active" class="btn btn-dark" type="submit" style="margin-top: 10px; margin-left: 10px;">
+                          Registrarse
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </form>

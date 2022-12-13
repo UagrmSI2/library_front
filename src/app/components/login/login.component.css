@@ -1,0 +1,47 @@
+body {
+    overflow-y: hidden!important;
+    /* Hide vertical scrollbar */
+    overflow-x: hidden!important;
+    /* Hide horizontal scrollbar */
+    overflow: hidden!important;
+    scrollbar-width: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    /* for Firefox */
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+}
+
+div {
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    /* for Firefox */
+    overflow-y: scroll;
+}
+
+div::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+}
+
+.image {
+    background-size: cover!important;
+    min-height: 100vh;
+}
+
+.sombreado {
+    margin-top: 12rem;
+    width: 420px;
+    background: #fff;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.986), 0 10px 10px rgb(0 0 0 / 22%);
+    border-radius: 0.75rem;
+}

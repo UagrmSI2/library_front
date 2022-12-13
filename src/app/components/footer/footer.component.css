@@ -1,0 +1,46 @@
+footer {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    color: black;
+}
+
+footer {
+    height: 10vh;
+    bottom: 0;
+}
+
+footer h4 {
+    font-size: 0.9rem;
+    align-self: center;
+}
+
+.footerlogin {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 40px;
+    color: #ffffff;
+    bottom: 0;
+    position: fixed;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: 100%;
+}
+
+.headerlogin {
+    position: fixed;
+    display: flex;
+    justify-content: center!important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.messagebody {
+    min-height: 373px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
